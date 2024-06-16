@@ -1,0 +1,98 @@
+.title-products {     /*titulo del  apartado */
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px 0 30px 0;
+
+}
+
+.search-input {     /* buscador */
+    float: left;
+    padding: 10px;
+    width: 50%;
+    border: none;     /* fuera borde */
+    border-bottom: 1px solid var(--color-gray);     /* borde inf. gris */
+    outline: 0;     /*quitar el borde azul por defecto del buscados */
+
+}
+
+.search-input:focus { /* buscador sin sombra al enfocar */
+    box-shadow: none;
+
+}
+
+.select-order { /* desplegable */
+    float: right;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;     /*raton cambiado a manita*/
+}
+
+.product-box { /* link de productos */
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.product-box:hover { /* link de productos:hover */
+    text-decoration: none;
+}
+.product-box img {
+    transition: all 0.3s; /*transicionar los efectos de la img */
+
+}
+
+.product-box:hover img{ /* imagen dentro link de productos:hover */
+    transform: scale(1.05); 
+}
+
+.product-box h3{
+    font-size: 14px;
+    font-weight: normal;
+    margin: 5px;
+    overflow: hidden; /*ocultar el texto que sobra */
+    -o-text-overflow: ellipsis; /* para opera */
+    text-overflow: ellipsis; /* con puntos suspensivos el texto que sobra */
+    white-space: nowrap; /* para que el espacio en blanco no salte de linea*/
+}
+
+.product-box .offer{ /*formato de la oferta */
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-box .offer.hidden{ /* ofertas ocultas */
+    visibility: hidden; /*se hacen invisibles aunque ocupan el espacio */
+}
+
+.product-box .price{ /*formato del precio */
+    font-size: 18px;
+}
+
+.product-box strong del{ /* precios tachados */
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.pagination { /*menu de paginas*/
+    text-align: center;
+    list-style: none;
+    font-style: 18px;
+}
+.pagination li{
+    display: inline-block; /*que se pongan uno al lado de otro */
+}
+.pagination li a{
+    color: black;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.pagination li a.active{
+    border: 1px solid black;
+}

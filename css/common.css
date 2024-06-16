@@ -1,0 +1,24 @@
+/* crear los css comunes */
+
+*{
+    box-sizing: border-box; /* de manera generica, los elementos mediran lo que indique el with y el heigth, sin contar paddin ni margin */
+
+}
+
+html, body{
+    margin: 0; /* reseteo de margin */
+    padding: 0; /* reseteo de padding */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a { /* links por defecto */
+    color: var(--color-primary);
+    text-decoration: none;
+
+}
+
+a:hover { /* links:hover por defecto */
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+    
+}

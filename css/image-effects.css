@@ -1,0 +1,36 @@
+
+/* fotos en blanco y negro */
+
+.product-box img {filter: grayscale(100%);}
+
+.product-box:hover img{
+    transform: scale(1);
+    filter: grayscale(0);
+}
+
+/* fotos saturadas, + color*/
+
+.product-box img {filter: saturate(1);}
+
+.product-box:hover img{
+    transform: scale(1);
+    filter: saturate(2);
+}
+
+/* brillo aumentado*/
+
+.product-box img {filter: brightness(1);}
+
+.product-box:hover img{
+    transform: scale(1);
+    filter: brightness(1.1);
+}
+
+/* contraste aumentado*/
+
+.product-box img {filter: contrast(1);}
+
+.product-box:hover img{
+    transform: scale(1.1);
+    filter: contrast(1.1);
+}
