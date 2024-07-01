@@ -14,13 +14,12 @@
     display: table;
     /* los elementos se comportan como tabla html */
 }
-/* para moviles */
-[class*="col-"]{
+[class*="col-"]{ /* para todos los class que empiezen por "col-"*/
     float: left;
     padding: 10px;
     width: 100%;
 }
-/* para moviles */
+/* grid para moviles */
 @media only screen and (max-width: 600px){
     .col-xs-1 {width: 8.33%;}
     .col-xs-2 {width: 16.66%;}
@@ -36,7 +35,7 @@
     .col-xs-12{width: 100%;}
 }
 
-/* para tablets */
+/* grid para tablets */
 @media only screen and (min-width: 600px){
 
     .col-s-1 {width: 8.33%;}
@@ -53,7 +52,7 @@
     .col-s-12{width: 100%;}
 }
 
-/* para escritorio */
+/* grid para escritorio */
 @media only screen and (min-width: 768px){
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}

@@ -1,7 +1,8 @@
 /* crear las variables de color */
 
 :root{
---color-primary:#fc7eb1;
---color-primary-dark:#ea337d;
+--color-primary:black;
+--color-primary-dark:#eb2675;
+--color-primary-soft:#f5c7d9;
 --color-gray:#cccccc;
 }
